@@ -37,7 +37,7 @@ public class LoginFilter implements Filter {
             resp.setContentType("text/html;charset=utf-8");
             resp.getWriter().write("<script>"
                     + "alert('您还未登录系统，请登录系统后查看！！！');"
-                    + "var path = 'http://118.89.58.79:8232/'+'pages/login.jsp';"
+                    + "var path = 'http://localhost:8080/infinite_war_exploded/'+'pages/login.jsp';"
                     + "window.location.href=path;"
                     + "</script>");
             return;
