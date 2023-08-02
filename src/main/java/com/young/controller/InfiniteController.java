@@ -280,7 +280,7 @@ public class InfiniteController {
             String fileName = file.getOriginalFilename(); // 获取原始文件名
             byte[] bytes = file.getBytes();
             // 设置上传文件存储路径
-            String filePath = request.getSession().getServletContext().getRealPath("/")+"img/"+fileName;
+            String filePath = request.getSession().getServletContext().getRealPath("/")+"img\\"+fileName;
             System.out.println(filePath);
 
             // 将图片上传到服务器根目录
