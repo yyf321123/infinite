@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.young.dao.CollectDao">
+
+	<!--加入收藏（新增）-->
+	<insert id="insertCollect">
+		insert into tb_collect
+			values (null,#{user_id},#{id})
+	</insert>
+
+	<!--查询-->
+	<select id="queryCollects" resultType="Collect">
+		select * from tb_collect
+	</select>
+
+	<!--取消收藏-->
+	<delete id="deleteCollect">
+		delete from tb_collect where collect_id=#{collect_id}
+	</delete>
+
+</mapper>
